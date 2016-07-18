@@ -1,0 +1,21 @@
+# tmp files
+.DS_Store
+.idea
+*.swp
+
+# build dirs
+platforms/*
+www/*
+
+# development directories
+/node_modules
+
+# logs
+npm-debug.log
+
+# configuration
+/src/config.json
+/config.xml
+
+# ctags
+/tags
