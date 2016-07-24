@@ -1,8 +1,10 @@
 <h2>Create a New Activity Requested by a User</h2>
 
-<div class="alert alert-warning">3 new activity requests!</div>
 
 <div ng-show="create.usersVisible" class="row-fluid">
+
+<div class="alert alert-warning">3 new activity requests!</div>
+
 
 	<div class="col-md-4">
 		<div class="panel panel-info">
@@ -49,35 +51,62 @@
 		<div class="col-md-4">
 		<div class="panel panel-info">
 			<div class="panel-heading">
-				<i class="fa fa-fw fa-user"></i> Bob S. requested:
+				<i class="fa fa-fw fa-user"></i> Daisy M. requested:
 			</div>
 			<div class="panel-body">
-				I would like to have an activity that lets me track that I play ping pong for around 20 minutes by default.
+				I would like to list gardening as a physical activity--it's really strenuous!
 			</div>
 			<div class="panel-footer">
-				<a class="btn btn-primary" ng-click="create.hideUsers()"><i class="fa fa-plus"></i> Add a new activity for Bob S. </a><br/><br/>
-				<a href="#/profile">View Bob S.'s profile</a>
+				<a class="btn btn-primary" ng-click="create.hideUsers()"><i class="fa fa-plus"></i> Add a new activity for Daisy M. </a><br/><br/>
+				<a href="#/profile">View Daisy M. profile</a>
 			</div>
 		</div>
 	</div>
-		<div class="col-md-4">
-		<div class="panel panel-info">
-			<div class="panel-heading">
-				<i class="fa fa-fw fa-user"></i> Bob S. requested:
-			</div>
-			<div class="panel-body">
-				I would like to have an activity that lets me track that I play ping pong for around 20 minutes by default.
-			</div>
-			<div class="panel-footer">
-				<a class="btn btn-primary" ng-click="create.hideUsers()"><i class="fa fa-plus"></i> Add a new activity for Bob S. </a><br/><br/>
-				<a href="#/profile">View Bob S.'s profile</a>
-			</div>
-		</div>
-	</div>
+
 
 </div>
 
-<div ng-show="!create.userVisible">
+<div ng-show="!create.usersVisible">
+ 
+ <i class="fa fa-user fa-2x"></i> <b>Bob S. indicated:</b>
+<div class="well">
+ I would like to have an activity that lets me track that I play ping pong for around 20 minutes by default.
+</div>
+
+<h4>Create an activity that matches Bob S.'s description</h4>
+<form>
+  <fieldset class="form-group">
+    <label for="name">Activity Name</label>
+    <input type="text" class="form-control" id="name" placeholder="Enter activity name">
+    <small class="text-muted">This should be easy to understand and short!</small>
+  </fieldset>
+  <fieldset class="form-group">
+    <label for="type">Activity Type</label>
+    <select class="form-control" id="type">
+      <option>Strength</option>
+      <option>Stretching</option>
+      <option>Lifestyle</option>
+      <option>Cardio</option>
+    </select>
+  </fieldset>
+  <fieldset class="form-group">
+    <label for="minutes">Expected Average Number of Minutes</label>
+    <select class="form-control" id="minutes">
+      <option>0-9 minutes</option>
+      <option>10-19 minutes</option>
+      <option>20-29 minutes</option>
+      <option>30-39 minutes</option>
+      <option>40-49 minutes</option>
+      <option>50-59 minutes</option>
+      <option>60-69 minutes</option>
+      <option>70-79 minutes</option>
+      <option>80-89 minutes</option>
+      <option>90+ minutes</option>
+
+    </select>
+  </fieldset>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
 <form>
 
 </form>	

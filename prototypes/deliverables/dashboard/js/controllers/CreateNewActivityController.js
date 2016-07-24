@@ -3,7 +3,7 @@
 
   function CreateNewActivityController() {
 
-  	this.usersVisible = true;
+  	this.usersVisible = false;
 
   	this.showUsers = function(){
   		this.usersVisible = true;
