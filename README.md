@@ -1,4 +1,4 @@
-# Erlich-Jones prototypes
+# Ehrlich-Jones prototypes
 
 ## Getting Started
 
@@ -12,4 +12,4 @@
 2. Any email and password combination will work
 
 ####
-Note: This repository hosts a functional prototype for end consumers of the "PROJECT ACTIVATE (name pending)" (Linda Erlich-Jones) project--not a working, polished and tested application. 
+Note: This repository hosts a functional prototype for end consumers of the "PROJECT ACTIVATE (name pending)" (Linda Ehrlich-Jones) project--not a working, polished and tested application. 

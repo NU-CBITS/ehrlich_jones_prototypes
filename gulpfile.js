@@ -6,9 +6,9 @@ var reload = browserSync.reload;
 gulp.task('serve', function() {
   browserSync({
     server: {
-      baseDir: 'app'
+      baseDir: 'prototypes'
     }
   });
 
-  gulp.watch(['*.html', 'css/**/*.css', 'js/**/*.js'], {cwd: 'app'}, reload);
+  gulp.watch(['*.html', '*.css', '*.js'], {cwd: 'prototypes'}, reload);
 });
