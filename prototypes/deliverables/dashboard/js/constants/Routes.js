@@ -12,7 +12,9 @@
     HELP: '/help',
     TOOLS: '/tools',
     HANDBOOKS: '/handbooks',
-    CREATE_NEW_ACTIVITY: '/create_new_activity'
+    CREATE_NEW_ACTIVITY: '/create_new_activity',
+    MANAGE_ACTIVITIES: '/manage_activities',
+    MANAGE_USERS: '/manage_users'
   };
 
   angular.module('cbitsPrototype.constants')

@@ -77,6 +77,21 @@
           controller: 'CreateNewActivityController',
           controllerAs: 'create'
         })
+        .when(Routes.MANAGE_ACTIVITIES, {  
+          templateUrl: 'partials/manage_activities.html',
+          controller: 'ManageActivitiesController',
+          controllerAs: 'manage'
+        })
+        .when(Routes.MANAGE_USERS, {  
+          templateUrl: 'partials/manage_users.html',
+          controller: 'ManageUsersController',
+          controllerAs: 'users'
+        })
+        .when(Routes.MANAGE_USERS + "/:verb", {  
+          templateUrl: 'partials/manage_users.html',
+          controller: 'ManageUsersController',
+          controllerAs: 'users'
+        })
 
     },
     run: function run($rootScope, $location, $q, $window, 
