@@ -11,13 +11,14 @@
     </div>
     <div class="collapse navbar-collapse" id="navbar-collapsed">
       <ul class="nav navbar-nav">
-        <li class="dropdown">
-          <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tools <label ng-show="navbar.newTasks('lessons')" class="label label-success">new!</label><span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#/lessons_current">Current Lesson Plan</a></li>
-            <li><a href="#/history">Explore Your History  <label ng-show="navbar.newTasks('lessons,history')" class="label label-success">new!</label></a></li>
-            <li role="separator" class="divider"></li>
-          </ul>
+        <li>
+          <a href="#/goals"><i class="fa fa-trophy"></i> Goals</a>
+        </li>
+        <li>
+          <a href="#/help"><i class="fa fa-question-mark"></i> Ask for Help</a>
+        </li>
+        <li>
+          <a href="#/messages"><i class="fa fa-letter"></i> Messages</a>
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -30,12 +31,12 @@
             {{navbar.userName}}
             <span class="caret"></span>
           </a>
-          <ul class="dropdown-menu">
-            <li><a href="#/settings">User Settings</a></li>
-            <li><a href="#/help">Help</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="/">Sign Out</a></li>
-          </ul>
+            <ul class="dropdown-menu">
+              <li><a href="#/settings">User Settings</a></li>
+              <li><a href="#/help">Help</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="/">Sign Out</a></li>
+            </ul>
         </li>
       </ul>
     </div>

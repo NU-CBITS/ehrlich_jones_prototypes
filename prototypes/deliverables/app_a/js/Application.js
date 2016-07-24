@@ -8,14 +8,14 @@
     configure: function configure($routeProvider, Routes) {
       $routeProvider
         .when(Routes.ROOT, {
-          templateUrl: 'partials/lessons_current.html',
-          controller: 'LessonsCurrentController',
-          controllerAs: 'lessonsCurrent'
+          templateUrl: 'partials/index.html',
+          controller: 'IndexController',
+          controllerAs: 'index'
         })
         .when(Routes.HOME, {
-          templateUrl: 'partials/lessons_current.html',
-          controller: 'LessonsCurrentController',
-          controllerAs: 'lessonsCurrent'
+          templateUrl: 'partials/index.html',
+          controller: 'IndexController',
+          controllerAs: 'index'
         })
         .when(Routes.SESSIONS, {
           templateUrl: 'partials/session.html',
