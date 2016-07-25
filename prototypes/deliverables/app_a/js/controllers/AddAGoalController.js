@@ -13,5 +13,5 @@
 
   angular.module('cbitsPrototype.controllers')
     .controller('AddAGoalController',
-    [AddAGoalController];
+    [AddAGoalController]);
 })();
