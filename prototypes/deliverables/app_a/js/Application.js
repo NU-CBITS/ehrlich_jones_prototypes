@@ -72,10 +72,10 @@
           controller: 'HandbooksController',
           controllerAs: 'handbooks'
         })
-        .when(Routes.TIPS_ARCHIVE, {  
-          templateUrl: 'partials/tips_archive.html',
-          controller: 'TipsArchiveController',
-          controllerAs: 'tips'
+        .when(Routes.TRACK_GOAL_PROGRESS, {  
+          templateUrl: 'partials/track_goal_progress.html',
+          controller: 'TrackGoalProgressController',
+          controllerAs: 'progress'
         })
 
     },
