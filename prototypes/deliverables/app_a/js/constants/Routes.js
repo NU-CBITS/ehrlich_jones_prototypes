@@ -16,7 +16,8 @@
     TIPS_ARCHIVE: '/tips_archive',
     TRACK_GOAL_PROGRESS: '/track_goal_progress',
     ADD_A_GOAL: '/add_a_goal',
-    COMPLETED_GOALS: '/completed_goals'
+    COMPLETED_GOALS: '/completed_goals',
+    NEW_ACTIVITY: '/new_activity'
   };
 
   angular.module('cbitsPrototype.constants')

@@ -87,6 +87,11 @@
           controller: 'CompletedGoalsController',
           controllerAs: 'completed'
         })
+        .when(Routes.NEW_ACTIVITY, {  
+          templateUrl: 'partials/new_activity.html',
+          controller: 'NewActivityController',
+          controllerAs: 'activity'
+        })
 
     },
     run: function run($rootScope, $location, $q, $window, 
