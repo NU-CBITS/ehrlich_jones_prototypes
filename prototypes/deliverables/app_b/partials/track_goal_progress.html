@@ -7,19 +7,15 @@
 <form>
   <fieldset class="form-group">
     <label for="minutes">How long did it take?</label>
-    <select class="form-control" id="minutes">
-      <option>0-9 minutes</option>
-      <option>10-19 minutes</option>
-      <option>20-29 minutes</option>
-      <option>30-39 minutes</option>
-      <option>40-49 minutes</option>
-      <option>50-59 minutes</option>
-      <option>60-69 minutes</option>
-      <option>70-79 minutes</option>
-      <option>80-89 minutes</option>
-      <option>90+ minutes</option>
-
-    </select>
+      <label class="btn btn-default full-width" ng-repeat="time in progress.times">
+        <div class="row">
+        <div class="col-md-1 col-sm-1 col-xs-1">
+        <input type="radio" name="time">
+        </div>
+        <div class="col-md-11 col-sm-11 col-xs-11"> {{time.name}}
+        </div>
+        </div>
+      </label>
   </fieldset>
 
 <button ng-click="progress.complete = true" class="btn btn-success btn-lg full-width">Save</button>

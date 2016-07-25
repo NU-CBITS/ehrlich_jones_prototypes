@@ -1,52 +1,47 @@
 <h2>Add a Goal</h2>
 
-<div ng-show="!add.complete">
-
-<form>
+<div ng-show="add.pagesVisible[0]">
   <fieldset class="form-group">
-    <label for="activity">What activity can you do?</label>
-    <select class="form-control" id="activity">
-      <option>Play ping pong</option>
-      <option>Go swimming</option>
-      <option>Go for a walk</option>
-      <option>Go dancing</option>
-    </select>
-      <a href="#/new_activity" class="btn btn-info">Don't see an activity you like?</a>
-
+    <label class="btn btn-default full-width"><div class="row"><div class="col-md-1 col-sm-1 col-xs-1"><input type="radio" name="activity"></div><div class="col-md-11 col-sm-11 col-xs-11">Play ping pong</div></div></label><br/>
+    <label class="btn btn-default full-width"><div class="row"><div class="col-md-1 col-sm-1 col-xs-1"><input type="radio" name="activity"></div><div class="col-md-11 col-sm-11 col-xs-11">Go swimming</div></div></label><br/>
+    <label class="btn btn-default full-width"><div class="row"><div class="col-md-1 col-sm-1 col-xs-1"><input type="radio" name="activity"></div><div class="col-md-11 col-sm-11 col-xs-11">Go for a walk</div></div></label><br/>
+    <label class="btn btn-default full-width"><div class="row"><div class="col-md-1 col-sm-1 col-xs-1"><input type="radio" name="activity"></div><div class="col-md-11 col-sm-11 col-xs-11">Go dancing</div></div></label><br/>
+    <a href="#/new_activity" class="btn btn-info">Don't see an activity you like?</a>
   </fieldset>
+  <button ng-click="add.showPage(1)" class="btn btn-success btn-lg full-width">Continue</button>
+</div>
+<div ng-show="add.pagesVisible[1]">
   <fieldset class="form-group">
     <label for="weeklyFrequency">How many times per week can you do it?</label>
-    <select class="form-control" id="weeklyFrequency">
-      <option>1</option>
-      <option>2</option>
-      <option selected>3</option>
-      <option>4</option>
-      <option>5</option>
-      <option>6</option>
-      <option>7</option>
-    </select>
+      <label class="btn btn-default full-width"><div class="row"><div class="col-md-1 col-sm-1 col-xs-1"><input type="radio" name="activity"></div><div class="col-md-11 col-sm-11 col-xs-11">1</div></div></label><br/>
+      <label class="btn btn-default full-width"><div class="row"><div class="col-md-1 col-sm-1 col-xs-1"><input type="radio" name="activity"></div><div class="col-md-11 col-sm-11 col-xs-11">2</div></div></label><br/>
+      <label class="btn btn-default full-width"><div class="row"><div class="col-md-1 col-sm-1 col-xs-1"><input type="radio" name="activity"></div><div class="col-md-11 col-sm-11 col-xs-11">3</div></div></label><br/>
+      <label class="btn btn-default full-width"><div class="row"><div class="col-md-1 col-sm-1 col-xs-1"><input type="radio" name="activity"></div><div class="col-md-11 col-sm-11 col-xs-11">4</div></div></label><br/>
+      <label class="btn btn-default full-width"><div class="row"><div class="col-md-1 col-sm-1 col-xs-1"><input type="radio" name="activity"></div><div class="col-md-11 col-sm-11 col-xs-11">5</div></div></label><br/>
+      <label class="btn btn-default full-width"><div class="row"><div class="col-md-1 col-sm-1 col-xs-1"><input type="radio" name="activity"></div><div class="col-md-11 col-sm-11 col-xs-11">6</div></div></label><br/>
+      <label class="btn btn-default full-width"><div class="row"><div class="col-md-1 col-sm-1 col-xs-1"><input type="radio" name="activity"></div><div class="col-md-11 col-sm-11 col-xs-11">7</div></div></label><br/>
   </fieldset>
+  <button ng-click="add.showPage(2)" class="btn btn-success btn-lg full-width">Continue</button>
+</div>
+<div ng-show="add.pagesVisible[2]">
   <fieldset class="form-group">
     <label for="minutes">How long do you think you can spend doing this?</label>
-    <select class="form-control" id="minutes">
-      <option>0-9 minutes</option>
-      <option>10-19 minutes</option>
-      <option selected>20-29 minutes</option>
-      <option>30-39 minutes</option>
-      <option>40-49 minutes</option>
-      <option>50-59 minutes</option>
-      <option>60-69 minutes</option>
-      <option>70-79 minutes</option>
-      <option>80-89 minutes</option>
-      <option>90+ minutes</option>
-    </select>
+      <label class="btn btn-default full-width"><div class="row"><div class="col-md-1 col-sm-1 col-xs-1"><input type="radio" name="activity"></div><div class="col-md-11 col-sm-11 col-xs-11">0-9 minutes</div></div></label><br/>
+      <label class="btn btn-default full-width"><div class="row"><div class="col-md-1 col-sm-1 col-xs-1"><input type="radio" name="activity"></div><div class="col-md-11 col-sm-11 col-xs-11">10-19 minutes</div></div></label><br/>
+      <label class="btn btn-default full-width"><div class="row"><div class="col-md-1 col-sm-1 col-xs-1"><input type="radio" name="activity"></div><div class="col-md-11 col-sm-11 col-xs-11">20-29 minutes</div></div></label><br/>
+      <label class="btn btn-default full-width"><div class="row"><div class="col-md-1 col-sm-1 col-xs-1"><input type="radio" name="activity"></div><div class="col-md-11 col-sm-11 col-xs-11">30-39 minutes</div></div></label><br/>
+      <label class="btn btn-default full-width"><div class="row"><div class="col-md-1 col-sm-1 col-xs-1"><input type="radio" name="activity"></div><div class="col-md-11 col-sm-11 col-xs-11">40-49 minutes</div></div></label><br/>
+      <label class="btn btn-default full-width"><div class="row"><div class="col-md-1 col-sm-1 col-xs-1"><input type="radio" name="activity"></div><div class="col-md-11 col-sm-11 col-xs-11">50-59 minutes</div></div></label><br/>
+      <label class="btn btn-default full-width"><div class="row"><div class="col-md-1 col-sm-1 col-xs-1"><input type="radio" name="activity"></div><div class="col-md-11 col-sm-11 col-xs-11">60-69 minutes</div></div></label><br/>
+      <label class="btn btn-default full-width"><div class="row"><div class="col-md-1 col-sm-1 col-xs-1"><input type="radio" name="activity"></div><div class="col-md-11 col-sm-11 col-xs-11">70-79 minutes</div></div></label><br/>
+      <label class="btn btn-default full-width"><div class="row"><div class="col-md-1 col-sm-1 col-xs-1"><input type="radio" name="activity"></div><div class="col-md-11 col-sm-11 col-xs-11">80-89 minutes</div></div></label><br/>
+      <label class="btn btn-default full-width"><div class="row"><div class="col-md-1 col-sm-1 col-xs-1"><input type="radio" name="activity"></div><div class="col-md-11 col-sm-11 col-xs-11">90+ minutes</div></div></label><br/>
   </fieldset>
-
-<button ng-click="add.complete = true" class="btn btn-success btn-lg full-width">Save</button>
-</form>
+  <button ng-click="add.showPage(3)" class="btn btn-success btn-lg full-width">Continue</button>
 </div>
 
-<div ng-show="add.complete">
+
+<div ng-show="add.pagesVisible[3]">
 <h3>Great, keep tracking!</h3>
 <a href="#/"  class="btn btn-success btn-lg full-width"><i class="fa fa-home"></i> Return Home</a>
 
