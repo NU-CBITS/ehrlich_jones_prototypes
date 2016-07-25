@@ -76,6 +76,16 @@
           templateUrl: 'partials/track_goal_progress.html',
           controller: 'TrackGoalProgressController',
           controllerAs: 'progress'
+        })        
+        .when(Routes.ADD_A_GOAL, {  
+          templateUrl: 'partials/add_a_goal.html',
+          controller: 'AddAGoalController',
+          controllerAs: 'add'
+        })
+        .when(Routes.COMPLETED_GOALS, {  
+          templateUrl: 'partials/completed_goals.html',
+          controller: 'CompletedGoalsController',
+          controllerAs: 'completed'
         })
 
     },
