@@ -4,7 +4,7 @@
 <h3>You said you...</h3>
 
 <div class="well"><h4>Played ping pong...</h4></div>
-
+<form>
   <fieldset class="form-group">
     <label for="minutes">How long did it take?</label>
     <select class="form-control" id="minutes">
@@ -23,10 +23,11 @@
   </fieldset>
 
 <button ng-click="progress.complete = true" class="btn btn-success btn-lg full-width">Save</button>
+</form>
 </div>
 
 <div ng-show="progress.complete">
-<h2>Great, keep tracking!</h2>
+<h3>Great, keep tracking!</h3>
 <a href="#/"  class="btn btn-success btn-lg full-width"><i class="fa fa-home"></i> Return Home</a>
 
 </div>
