@@ -1,0 +1,53 @@
+<h2>Add a Goal</h2>
+
+<div ng-show="!add.complete">
+
+<form>
+  <fieldset class="form-group">
+    <label for="activity">What activity can you do?</label>
+    <select class="form-control" id="activity">
+      <option>Play ping pong</option>
+      <option>Go swimming</option>
+      <option>Go for a walk</option>
+      <option>Go dancing</option>
+    </select>
+      <a href="#/new_activity" class="btn btn-info">Don't see an activity you like?</a>
+
+  </fieldset>
+  <fieldset class="form-group">
+    <label for="weeklyFrequency">How many times per week can you do it?</label>
+    <select class="form-control" id="weeklyFrequency">
+      <option>1</option>
+      <option>2</option>
+      <option selected>3</option>
+      <option>4</option>
+      <option>5</option>
+      <option>6</option>
+      <option>7</option>
+    </select>
+  </fieldset>
+  <fieldset class="form-group">
+    <label for="minutes">How long do you think you can spend doing this?</label>
+    <select class="form-control" id="minutes">
+      <option>0-9 minutes</option>
+      <option>10-19 minutes</option>
+      <option selected>20-29 minutes</option>
+      <option>30-39 minutes</option>
+      <option>40-49 minutes</option>
+      <option>50-59 minutes</option>
+      <option>60-69 minutes</option>
+      <option>70-79 minutes</option>
+      <option>80-89 minutes</option>
+      <option>90+ minutes</option>
+    </select>
+  </fieldset>
+
+<button ng-click="add.complete = true" class="btn btn-success btn-lg full-width">Save</button>
+</form>
+</div>
+
+<div ng-show="add.complete">
+<h3>Great, keep tracking!</h3>
+<a href="#/"  class="btn btn-success btn-lg full-width"><i class="fa fa-home"></i> Return Home</a>
+
+</div>
